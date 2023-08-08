@@ -3,8 +3,8 @@
     <head>
         <title>Inicio - My Anime Site</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
     </head>
     <body>
@@ -41,20 +41,25 @@
                 <div class="row">
                     <div class="col-md-3 sidebar bg-light">
                         <h3>Explore Options</h3>
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">trending_up</span> Popular Anime</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">star_rate</span> Top Rated</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">forum</span> Most Discussed</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">search</span> Search</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">bookmark</span> Bookmarks</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">history</span> View History</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">live_tv</span> Currently Airing</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">calendar_today</span> Calendar</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">category</span> Category</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">local_movies</span> Genre</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">event</span> Year</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">sort_by_alpha</span> Alphabetical</a></li>
-                        </ul>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle Sidebar">
+                            <span class="material-icons">menu</span>
+                        </button>
+                        <div class="collapse show" id="sidebarMenu">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">trending_up</span> Popular Anime</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">star_rate</span> Top Rated</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">forum</span> Most Discussed</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">search</span> Search</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">bookmark</span> Bookmarks</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">history</span> View History</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">live_tv</span> Currently Airing</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">calendar_today</span> Calendar</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">category</span> Category</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">local_movies</span> Genre</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">event</span> Year</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons">sort_by_alpha</span> Alphabetical</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-9 main-content gallery">
                         <h3>Popular Animes</h3>
@@ -72,7 +77,7 @@
                             <div class="anime">
                                 <img src="../img/my-hero-academia.webp" alt="Imagen de My Hero Academia">
                                 <h3>My Hero Academia</h3>
-                                <p>Este anime sigue a Izuku Midoriya, un chico que sueña con convertirse en un héroe en un mundo donde la mayoría de las personas tienen superpoderes.</p>
+                                <p>Este anime sigue a Izuku Midoriya, un chico que sueña con convertirse en héroe en un mundo donde la mayoría de las personas tienen superpoderes.</p>
                             </div>
                             <div class="anime">
                                 <img src="../img/dragon-ball-z.webp" alt="Imagen de Dragon Ball Z">
@@ -94,10 +99,13 @@
                 <div class="social-icons">
                     <a href="https://www.youtube.com/mygoodview" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
                     <a href="https://www.instagram.com/mygoodview" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@mygoodview" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>                
+                    <a href="https://www.tiktok.com/@mygoodview" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
                 </div>
                 <p>GoodView una comunidad Anime. &copy; 2023</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
 </html>

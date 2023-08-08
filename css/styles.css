@@ -26,9 +26,7 @@ body {
 .navbar-nav .nav-link .material-icons {
     margin-right: 0.5em; /* Agrega un margen a la derecha del ícono */
 }
-.navbar-toggler-icon {
-    background-color: #4B0082; /* Morado oscuro */
-}
+
 
 /* Estilos para la galería */
 .gallery {
@@ -71,6 +69,9 @@ body {
 .sidebar .nav-link {
     display: flex; /* Utiliza Flexbox para alinear íconos y texto */
     align-items: center; /* Alinea verticalmente los íconos y el texto */
+    color: #4B0082; /* Morado oscuro */
+}
+.sidebar h3 {
     color: #4B0082; /* Morado oscuro */
 }
 

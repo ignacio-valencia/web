@@ -1,0 +1,239 @@
+/* CSS general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #800080; /* Morado */
+    color: #FFFFFF; /* Blanco */
+}
+
+header {
+    background-color: #4B0082; /* Morado oscuro */
+    color: #FFFFFF; /* Blanco */
+    padding: 1em 0; /* 1em arriba y abajo, 0 a los lados */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    height: 4em;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: #6A0DAD; /* Morado más oscuro */
+}
+
+nav ul li {
+    margin-right: 1em; /* 1em de margen a la derecha */
+}
+
+nav ul li a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+}
+
+main {
+    background-color: #800080; /* Morado */
+    color: #FFFFFF; /* Blanco */
+    padding: 2em; /* 2em en todos los lados */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.anime {
+    width: 12em; /* 12em de ancho */
+    margin: 1em; /* 1em de margen en todos los lados */
+    text-align: center;
+    object-fit: cover;
+}
+
+.anime img {
+    width: 100%;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 1em; /* 1em de margen arriba */
+    padding: 0.5em; /* 0.5em de padding en todos los lados */
+    border-radius: 5px; /* Borde redondeado */
+    color: #FFFFFF; /* Blanco */
+}
+
+.watching {
+    background-color: #32CD32; /* Verde */
+}
+
+.review {
+    background-color: #f8aa00; /* Dorado */
+}
+
+.pending {
+    background-color: #FF4500; /* Rojo naranja */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    flex: 3;
+    margin-right: 2em; /* 2em de margen a la derecha */
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-right: 0.5em; /* 0.5em de margen a la derecha */
+}
+
+/* Estilos para la página community.html */
+.sidebar .anime img {
+    width: 9em; /* 9em de ancho */
+    height: 9em; /* 9em de alto */
+    border-radius: 50%; /* Borde redondeado */
+}
+
+.sidebar .anime .anime-title {
+    font-size: 12px; /* Tamaño de fuente */
+    margin-top: 0.5em; /* 0.5em de margen arriba */
+}
+
+.main-content .discussion .anime img {
+    width: 9em; /* 9em de ancho */
+    height: 9em; /* 9em de alto */
+    border-radius: 50%; /* Borde redondeado */
+}
+
+/* Estilos para la lista de animes populares */
+.sidebar .gallery {
+    height: 40em; /* 15em de altura */
+    overflow-y: auto; /* Scroll vertical si excede la altura */
+}
+
+/* Estilos para la discusión en forma de chat de WhatsApp */
+.discussion {
+    background-color: #4c0055; /* Color de fondo */
+    padding: 1em; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1em; /* 1em de margen inferior */
+}
+
+.avatar {
+    margin-right: 0.5em; /* 0.5em de margen a la derecha */
+}
+
+.post-content {
+    background-color: #2b6200; /* Color de fondo del mensaje */
+    padding: 0.5em 1em; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.post-content h4 {
+    margin: 0; /* Elimina el margen superior e inferior */
+}
+
+.post-content p {
+    margin: 0.25em 0; /* Ajusta el margen vertical */
+}
+
+/* CSS para la página recommendations.html */
+.blog-post {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em; /* 2em de margen inferior */
+}
+
+.blog-post .post-image {
+    margin-right: 2em; /* 2em de margen a la derecha */
+    height: 9em; /* Mismo tamaño que el cuadro verde del contenido del post */
+    width: 9em; /* Mismo tamaño que el cuadro verde del contenido del post */
+    border-radius: 10px; /* Borde redondeado */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el cuadro */
+}
+
+.blog-post .post-image img {
+    width: 100%; /* Ajusta la imagen al tamaño del cuadro */
+    height: 100%; /* Ajusta la imagen al tamaño del cuadro */
+    object-fit: cover; /* Ajusta el tamaño y recorta la imagen para que se ajuste al cuadro */
+}
+
+.blog-post .post-content {
+    flex: 1;
+    padding: 1em;
+    background-color: #2b6200; /* Color de fondo del contenido del post */
+    border-radius: 10px; /* Borde redondeado */
+    color: #FFFFFF; /* Blanco */
+}
+
+.blog-post .post-content h3 {
+    margin-top: 0; /* Elimina el margen superior del título */
+}
+
+.blog-post .post-content .genre {
+    margin-top: 0.5em; /* 0.5em de margen arriba */
+}
+
+.blog-post .post-content .synopsis {
+    margin-top: 1em; /* 1em de margen arriba */
+}
+
+.blog-post .post-content .read-more {
+    display: inline-block;
+    margin-top: 1em; /* 1em de margen arriba */
+    padding: 0.5em 1em; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #4c0055; /* Color de fondo del botón */
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+}
+
+footer {
+    background-color: #4B0082; /* Morado oscuro */
+    color: #FFFFFF; /* Blanco */
+    text-align: center;
+    padding: 1em 0; /* 1em arriba y abajo, 0 a los lados */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para dispositivos con pantalla de hasta 600px de ancho */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer {
+        position: static;
+    }
+}

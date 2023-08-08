@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* CSS general */
 body {
     font-family: Arial, sans-serif;
@@ -15,8 +20,12 @@ body {
 .navbar-brand,
 .navbar-nav .nav-link {
     color: #4B0082; /* Morado oscuro */
+    display: flex; /* Utiliza Flexbox para alinear íconos y texto */
+    align-items: center; /* Alinea verticalmente los íconos y el texto */
 }
-
+.navbar-nav .nav-link .material-icons {
+    margin-right: 0.5em; /* Agrega un margen a la derecha del ícono */
+}
 .navbar-toggler-icon {
     background-color: #4B0082; /* Morado oscuro */
 }

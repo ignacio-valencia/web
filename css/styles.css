@@ -7,233 +7,97 @@ body {
     color: #FFFFFF; /* Blanco */
 }
 
-header {
+/* Estilos para el menú de navegación de Bootstrap */
+.navbar {
+    background-color: #FFFFFF; /* Blanco */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #4B0082; /* Morado oscuro */
+}
+
+.navbar-toggler-icon {
     background-color: #4B0082; /* Morado oscuro */
-    color: #FFFFFF; /* Blanco */
-    padding: 1em 0; /* 1em arriba y abajo, 0 a los lados */
-    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    height: 4em;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    background-color: #6A0DAD; /* Morado más oscuro */
-}
-
-nav ul li {
-    margin-right: 1em; /* 1em de margen a la derecha */
-}
-
-nav ul li a {
-    color: #FFFFFF; /* Blanco */
-    text-decoration: none;
-}
-
-main {
-    background-color: #800080; /* Morado */
-    color: #FFFFFF; /* Blanco */
-    padding: 2em; /* 2em en todos los lados */
-}
-
+/* Estilos para la galería */
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 1em; /* Espacio entre los elementos de la galería */
 }
 
 .anime {
-    width: 12em; /* 12em de ancho */
-    margin: 1em; /* 1em de margen en todos los lados */
-    text-align: center;
-    object-fit: cover;
+    flex: 1 1 calc(33.333% - 1em); /* Toma un tercio del ancho, menos el espacio entre elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y la altura */
+    padding: 1em; /* Espaciado interno */
+    background-color: #FFFFFF; /* Fondo blanco */
+    border: 1px solid #4B0082; /* Borde morado */
+    text-align: center; /* Centra el texto */
 }
 
 .anime img {
-    width: 100%;
+    max-width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 0.5em; /* Margen inferior */
 }
 
-.tag {
-    display: inline-block;
-    margin-top: 1em; /* 1em de margen arriba */
-    padding: 0.5em; /* 0.5em de padding en todos los lados */
-    border-radius: 5px; /* Borde redondeado */
-    color: #FFFFFF; /* Blanco */
+.anime h3 {
+    margin: 0.5em 0; /* Margen arriba y abajo */
+    color: #4B0082; /* Morado oscuro */
 }
 
-.watching {
-    background-color: #32CD32; /* Verde */
+.anime p {
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    color: #333333; /* Gris oscuro */
 }
 
-.review {
-    background-color: #f8aa00; /* Dorado */
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .anime {
+        flex: 1 1 calc(50% - 1em); /* Toma la mitad del ancho en pantallas más pequeñas */
+    }
 }
 
-.pending {
-    background-color: #FF4500; /* Rojo naranja */
+@media (max-width: 480px) {
+    .anime {
+        flex: 1 1 100%; /* Toma todo el ancho en pantallas muy pequeñas */
+    }
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-content {
-    flex: 3;
-    margin-right: 2em; /* 2em de margen a la derecha */
-}
-
-.sidebar {
-    flex: 1;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li a {
-    color: #FFFFFF; /* Blanco */
-    text-decoration: none;
-}
-
-.material-icons {
-    vertical-align: middle;
-    margin-right: 0.5em; /* 0.5em de margen a la derecha */
-}
-
-/* Estilos para la página community.html */
-.sidebar .anime img {
-    width: 9em; /* 9em de ancho */
-    height: 9em; /* 9em de alto */
-    border-radius: 50%; /* Borde redondeado */
-}
-
-.sidebar .anime .anime-title {
-    font-size: 12px; /* Tamaño de fuente */
-    margin-top: 0.5em; /* 0.5em de margen arriba */
-}
-
-.main-content .discussion .anime img {
-    width: 9em; /* 9em de ancho */
-    height: 9em; /* 9em de alto */
-    border-radius: 50%; /* Borde redondeado */
-}
-
-/* Estilos para la lista de animes populares */
-.sidebar .gallery {
-    height: 40em; /* 15em de altura */
-    overflow-y: auto; /* Scroll vertical si excede la altura */
-}
-
-/* Estilos para la discusión en forma de chat de WhatsApp */
-.discussion {
-    background-color: #4c0055; /* Color de fondo */
-    padding: 1em; /* Espaciado interno */
-    border-radius: 10px; /* Borde redondeado */
-}
-
-.message {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1em; /* 1em de margen inferior */
-}
-
-.avatar {
-    margin-right: 0.5em; /* 0.5em de margen a la derecha */
-}
-
-.post-content {
-    background-color: #2b6200; /* Color de fondo del mensaje */
-    padding: 0.5em 1em; /* Espaciado interno */
-    border-radius: 10px; /* Borde redondeado */
-}
-
-.post-content h4 {
-    margin: 0; /* Elimina el margen superior e inferior */
-}
-
-.post-content p {
-    margin: 0.25em 0; /* Ajusta el margen vertical */
-}
-
-/* CSS para la página recommendations.html */
-.blog-post {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 2em; /* 2em de margen inferior */
-}
-
-.blog-post .post-image {
-    margin-right: 2em; /* 2em de margen a la derecha */
-    height: 9em; /* Mismo tamaño que el cuadro verde del contenido del post */
-    width: 9em; /* Mismo tamaño que el cuadro verde del contenido del post */
-    border-radius: 10px; /* Borde redondeado */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el cuadro */
-}
-
-.blog-post .post-image img {
-    width: 100%; /* Ajusta la imagen al tamaño del cuadro */
-    height: 100%; /* Ajusta la imagen al tamaño del cuadro */
-    object-fit: cover; /* Ajusta el tamaño y recorta la imagen para que se ajuste al cuadro */
-}
-
-.blog-post .post-content {
-    flex: 1;
-    padding: 1em;
-    background-color: #2b6200; /* Color de fondo del contenido del post */
-    border-radius: 10px; /* Borde redondeado */
-    color: #FFFFFF; /* Blanco */
-}
-
-.blog-post .post-content h3 {
-    margin-top: 0; /* Elimina el margen superior del título */
-}
-
-.blog-post .post-content .genre {
-    margin-top: 0.5em; /* 0.5em de margen arriba */
-}
-
-.blog-post .post-content .synopsis {
-    margin-top: 1em; /* 1em de margen arriba */
-}
-
-.blog-post .post-content .read-more {
-    display: inline-block;
-    margin-top: 1em; /* 1em de margen arriba */
-    padding: 0.5em 1em; /* Espaciado interno */
-    border-radius: 5px; /* Borde redondeado */
-    background-color: #4c0055; /* Color de fondo del botón */
-    color: #FFFFFF; /* Blanco */
-    text-decoration: none;
-}
-
-footer {
+/* Estilos para el pie de página */
+.site-footer {
     background-color: #4B0082; /* Morado oscuro */
     color: #FFFFFF; /* Blanco */
+    padding: 1em 0; /* Espaciado interno */
     text-align: center;
-    padding: 1em 0; /* 1em arriba y abajo, 0 a los lados */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-/* Estilos para dispositivos con pantalla de hasta 600px de ancho */
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        height: auto;
-    }
-
-    footer {
-        position: static;
-    }
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 1em; /* Espaciado interno a los lados */
 }
+
+.social-icons {
+    margin-bottom: 1em; /* Margen inferior */
+}
+
+.social-icon {
+    display: inline-block; /* Alineación horizontal */
+    margin-right: 1em; /* Margen a la derecha */
+    font-size: 1.5em; /* Tamaño del ícono */
+    color: #FFFFFF; /* Blanco */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.social-icon:hover {
+    color: #FFD700; /* Dorado al pasar el ratón */
+}
+
+/* Estilos específicos para cada red social (opcional) */
+.social-icon.youtube { color: #FF0000; } /* Rojo para YouTube */
+.social-icon.instagram { color: #E1306C; } /* Rosa para Instagram */
+.social-icon.tiktok { color: #000000; } /* Negro para TikTok */

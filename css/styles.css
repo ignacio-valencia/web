@@ -62,18 +62,24 @@ body {
     font-size: 0.9em; /* Tamaño de fuente más pequeño */
     color: #333333; /* Gris oscuro */
 }
-
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .anime {
-        flex: 1 1 calc(50% - 1em); /* Toma la mitad del ancho en pantallas más pequeñas */
-    }
+/* siderbar */
+.sidebar {
+    padding: 1em; /* Espaciado interno */
+    border-right: 1px solid #ddd; /* Borde derecho */
 }
 
-@media (max-width: 480px) {
-    .anime {
-        flex: 1 1 100%; /* Toma todo el ancho en pantallas muy pequeñas */
-    }
+.sidebar .nav-link {
+    display: flex; /* Utiliza Flexbox para alinear íconos y texto */
+    align-items: center; /* Alinea verticalmente los íconos y el texto */
+    color: #4B0082; /* Morado oscuro */
+}
+
+.sidebar .nav-link .material-icons {
+    margin-right: 0.5em; /* Agrega un margen a la derecha del ícono */
+}
+
+.sidebar .nav-link:hover {
+    color: #800080; /* Morado al pasar el ratón */
 }
 
 /* Estilos para el pie de página */
@@ -110,3 +116,16 @@ body {
 .social-icon.youtube { color: #FF0000; } /* Rojo para YouTube */
 .social-icon.instagram { color: #E1306C; } /* Rosa para Instagram */
 .social-icon.tiktok { color: #000000; } /* Negro para TikTok */
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .anime {
+        flex: 1 1 calc(50% - 1em); /* Toma la mitad del ancho en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .anime {
+        flex: 1 1 100%; /* Toma todo el ancho en pantallas muy pequeñas */
+    }
+}

@@ -1,0 +1,140 @@
+// Importar variables y mixins
+@import 'variables';
+@import 'mixins';
+
+// Reset CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $secondary-color;
+    color: $white-color;
+}
+
+// Estilos para el menú de navegación de Bootstrap
+.navbar {
+    background-color: $white-color;
+
+    &-brand,
+    .navbar-nav .nav-link {
+        @include flex-center;
+        color: $primary-color;
+    }
+
+    .nav-link .material-icons {
+        margin-right: 0.5em;
+    }
+}
+
+// Estilos para la galería
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: $gap;
+}
+
+.anime {
+    flex: 1 1 calc(33.333% - #{$gap});
+    box-sizing: border-box;
+    padding: $gap;
+    background-color: $white-color;
+    border: 1px solid $primary-color;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+        margin: 0.5em 0;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: 0.9em;
+        color: $grey-color;
+    }
+
+    @media (max-width: 768px) {
+        flex: 1 1 calc(50% - #{$gap});
+    }
+
+    @media (max-width: 480px) {
+        flex: 1 1 100%;
+    }
+}
+
+// Estilos para la barra lateral
+.sidebar {
+    padding: $gap;
+    border-right: 1px solid #ddd;
+
+    .nav-link {
+        @include flex-center;
+        color: $primary-color;
+    }
+
+    h3 {
+        color: $primary-color;
+    }
+
+    .nav-link .material-icons {
+        margin-right: 0.5em;
+    }
+
+    .nav-link:hover {
+        color: $secondary-color;
+    }
+}
+
+// Estilos para el pie de página
+.site-footer {
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $gap;
+}
+
+.social-icons {
+    margin-bottom: 1em;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 1.5em;
+    color: $white-color;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #FFD700;
+    }
+
+    &.youtube {
+        color: #FF0000;
+    }
+
+    &.instagram {
+        color: #E1306C;
+    }
+
+    &.tiktok {
+        color: #000000;
+    }
+}

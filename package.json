@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "web basica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignacio-valencia/web.git"
+  },
+  "author": "ignacio-valencia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ignacio-valencia/web/issues"
+  },
+  "homepage": "https://github.com/ignacio-valencia/web#readme",
+  "keywords": [],
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

@@ -15,13 +15,14 @@ body {
 .navbar {
   background-color: #FFFFFF;
 }
-.navbar-brand,
+.navbar .navbar-brand,
 .navbar .navbar-nav .nav-link {
+  color: #4B0082;
   display: flex;
   align-items: center;
-  color: #4B0082;
 }
-.navbar .nav-link .material-icons {
+.navbar .navbar-brand .material-icons,
+.navbar .navbar-nav .nav-link .material-icons {
   margin-right: 0.5em;
 }
 
@@ -53,16 +54,6 @@ body {
   font-size: 0.9em;
   color: #333333;
 }
-@media (max-width: 768px) {
-  .anime {
-    flex: 1 1 calc(50% - 1em);
-  }
-}
-@media (max-width: 480px) {
-  .anime {
-    flex: 1 1 100%;
-  }
-}
 
 .sidebar {
   padding: 1em;
@@ -89,35 +80,43 @@ body {
   padding: 1em 0;
   text-align: center;
 }
-
-.container {
+.site-footer .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
 }
-
-.social-icons {
+.site-footer .social-icons {
   margin-bottom: 1em;
 }
-
-.social-icon {
+.site-footer .social-icons .social-icon {
   display: inline-block;
   margin-right: 1em;
   font-size: 1.5em;
   color: #FFFFFF;
   transition: color 0.3s;
 }
-.social-icon:hover {
+.site-footer .social-icons .social-icon:hover {
   color: #FFD700;
 }
-.social-icon.youtube {
+.site-footer .social-icons .social-icon .youtube {
   color: #FF0000;
 }
-.social-icon.instagram {
+.site-footer .social-icons .social-icon .instagram {
   color: #E1306C;
 }
-.social-icon.tiktok {
+.site-footer .social-icons .social-icon .tiktok {
   color: #000000;
+}
+
+@media (max-width: 768px) {
+  .anime {
+    flex: 1 1 calc(50% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  .anime {
+    flex: 1 1 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

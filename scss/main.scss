@@ -1,5 +1,7 @@
-@import 'variables';
 @import 'mixins';
+@import 'variables';
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 * {
     margin: 0;

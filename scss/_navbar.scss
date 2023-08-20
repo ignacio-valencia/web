@@ -1,41 +1,34 @@
 @import 'variables';
 @import 'mixins';
 
-// Estilos para la barra de navegación
-.navbar {
+.navbar,
+.offcanvas {
     background-color: $navbar-bg-color;
-
-    // Alineación del ícono con el título "My GoodView"
-    .navbar-brand {
-        display: flex;
-        align-items: center;
-
-        .material-icons {
-            margin-right: 8px;
-        }
+    color: $text-color;
+    #offcanvasExampleLabel {
+        color: $navbar-text-color;
     }
-
-    // Alineación de los íconos con el texto en el menú principal
+    .navbar-brand,
     .nav-link {
         display: flex;
         align-items: center;
 
-        a {
-            color: $text-color;
-        }
-
         .material-icons {
-            margin-right: 8px;
+            margin: 8px;
         }
     }
 }
 
-// Estilos para el menú desplegable
+.navbar {
+    .nav-link a {
+        color: $text-color;
+    }
+}
+
 .dropdown-menu {
     background-color: $dropdown-bg-color;
 }
 
-// Estilos para los elementos del menú desplegable
 .dropdown-item {
     color: $dropdown-item-color;
 
@@ -45,13 +38,10 @@
     }
 }
 
-// Estilos para el menú off-canvas
-.offcanvas {
-    background-color: $offcanvas-bg-color;
-    color: $text-color;
-}
-
-// Estilos para el menú desplegable en hover
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block;
+}
+
+.offcanvas .nav-link {
+    color: $navbar-text-color; // o puedes usar una variable // Cambiar el color del texto "Explore Options"    
 }

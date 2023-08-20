@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <meta charset="utf-8" />
     <title>Mi Lista - My Anime Site</title>
     <!-- Meta tags para SEO -->
@@ -16,63 +17,78 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="../index.html"><span class="material-icons">crisis_alert</span>My GoodView</a>My GoodView</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../index.html"><i class="material-icons">home</i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./explore.html"><i class="material-icons">explore</i> Explore</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./mylist.html"><i class="material-icons">check_circle</i> My List</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./community.html"><i class="material-icons">group</i> Community</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./recommendations.html"><i class="material-icons">thumb_up</i> Recommendations</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    <main>
-        <h2>Mi Lista de Animes</h2>
-        <div class="gallery">
-            <div class="anime">
-                <span class="tag watching">Viendo - Cap 025</span>
-                <img src="../img/naruto.webp" alt="Imagen de Naruto">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html"><span class="material-icons">crisis_alert</span>My GoodView</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html"><i class="material-icons">home</i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./explore.html"><i class="material-icons">explore</i> Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./mylist.html"><i class="material-icons">check_circle</i> My List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./community.html"><i class="material-icons">group</i> Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recommendations.html"><i class="material-icons">thumb_up</i>
+                            Recommendations</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5 align-items-center justify-content-center">
+        <h1>Mi Lista de Animes</h1>
+        <ul class="list-group list-group-checkable col-sm-6 col-lg-4 mb-4">
+            <li class="card text-center p-3 pe-none">
+                <span class="tag watching">Viendo - Cap 025</span>                
                 <h3>Naruto</h3>
-                <p>Este anime sigue la historia de Naruto Uzumaki, un joven ninja que busca reconocimiento y sueña con convertirse en Hokage, el líder de su aldea.</p>
-            </div>
-            <div class="anime">
-                <span class="tag review">Revisando - Cap 100</span>
-                <img src="../img/one-piece.webp" alt="Imagen de One Piece">
+                <img src="../img/naruto.webp" class="rounded-3" alt="Imagen de Naruto">
+                <span class="d-block opacity-50">Este anime sigue la historia de Naruto Uzumaki, un joven ninja que busca reconocimiento y sueña con
+                    convertirse en Hokage, el líder de su aldea.</span>
+                <button class="btn btn-success rounded-pill px-3">Agregado</button>
+                <button class="btn btn-danger rounded-pill px-3">Eliminar</button>
+            </li>
+            <li class="card text-center p-3 pe-none">
+                <span class="tag review">Revisando - Cap 100</span>                
                 <h3>One Piece</h3>
-                <p>Este anime sigue las aventuras de Monkey D. Luffy y su tripulación de piratas en su búsqueda del One Piece, el tesoro más grande del mundo.</p>
-            </div>
-            <div class="anime">
-                <span class="tag pending">Pendiente - Cap 001</span>
-                <img src="../img/my-hero-academia.webp" alt="Imagen de My Hero Academia">
+                <img src="../img/one-piece.webp" class="rounded-3" alt="Imagen de One Piece">
+                <span class="d-block small opacity-50">Este anime sigue las aventuras de Monkey D. Luffy y su tripulación de piratas en su búsqueda del One
+                    Piece, el tesoro más grande del mundo.</span>
+                    <button class="btn btn-success rounded-pill px-3">Agregado</button>
+                    <button class="btn btn-danger rounded-pill px-3">Eliminar</button>
+            </li>
+            <li class="card text-center p-3 pe-none">
+                <span class="tag pending">Pendiente - Cap 001</span>                
                 <h3>My Hero Academia</h3>
-                <p>Este anime sigue a Izuku Midoriya, un chico que sueña con convertirse en un héroe en un mundo donde la mayoría de las personas tienen superpoderes.</p>
-            </div>
-        </div>
+                <img src="../img/my-hero-academia.webp" class="rounded-3" alt="Imagen de My Hero Academia">
+                <span class="d-block small opacity-50">Este anime sigue a Izuku Midoriya, un chico que sueña con convertirse en un héroe en un mundo donde
+                    la mayoría de las personas tienen superpoderes.</span>
+                    <button class="btn btn-success rounded-pill px-3">Agregado</button>
+                    <button class="btn btn-danger rounded-pill px-3">Eliminar</button>
+            </li>
+        </ul>
     </main>
     <footer class="site-footer">
         <div class="container">
             <div class="social-icons">
-                <a href="https://www.youtube.com/mygoodview" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/mygoodview" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@mygoodview" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/mygoodview" target="_blank" class="social-icon youtube"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/mygoodview" target="_blank" class="social-icon instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@mygoodview" target="_blank" class="social-icon tiktok"><i
+                        class="fab fa-tiktok"></i></a>
             </div>
             <p>GoodView una comunidad Anime. &copy; 2023</p>
         </div>
@@ -81,5 +97,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -32,3 +32,7 @@
 .sidebar .nav-link:hover {
     color: #800080; /* Morado al pasar el ratón */
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

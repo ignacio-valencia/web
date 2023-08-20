@@ -11857,14 +11857,36 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  background-color: #800080;
+  background-color: #FFFFFF;
 }
-.navbar .navbar-brand,
-.navbar .navbar-nav .nav-link {
+
+.navbar-brand,
+.navbar-nav .nav-link {
   color: #4B0082;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+/* siderbar */
+.sidebar {
+  padding: 1em; /* Espaciado interno */
+  border-right: 1px solid #ddd; /* Borde derecho */
+}
+
+.sidebar .nav-link {
+  display: flex; /* Utiliza Flexbox para alinear íconos y texto */
+  align-items: center; /* Alinea verticalmente los íconos y el texto */
+  color: #4B0082; /* Morado oscuro */
+}
+
+.sidebar h3, .sidebar .h3 {
+  color: #4B0082; /* Morado oscuro */
+}
+
+.sidebar .nav-link .material-icons {
+  margin-right: 0.5em; /* Agrega un margen a la derecha del ícono */
+}
+
+.sidebar .nav-link:hover {
+  color: #800080; /* Morado al pasar el ratón */
 }
 
 .gallery {
@@ -11873,26 +11895,82 @@ textarea.form-control-lg {
   justify-content: space-between;
   gap: 1em;
 }
-.gallery .anime {
+
+.anime {
   flex: 1 1 calc(33.333% - 1em);
-  background-color: #800080;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
   border: 1px solid #4B0082;
+  text-align: center;
+}
+
+.anime img {
+  max-width: 100%;
+  /* Ajusta la imagen al contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  margin-bottom: 0.5em;
+  /* Margen inferior */
+}
+
+.anime h3, .anime .h3 {
+  margin: 0.5em 0;
+  /* Margen arriba y abajo */
+  color: #4B0082;
+  /* Morado oscuro */
+}
+
+.anime p {
+  font-size: 0.9em;
+  /* Tamaño de fuente más pequeño */
+  color: #333333;
+  /* Gris oscuro */
 }
 
 .site-footer {
   background-color: #4B0082;
-  color: #800080;
+  color: #FFFFFF;
+  padding: 1em 0;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .anime {
-    flex: 1 1 calc(50% - 1em);
-  }
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 0 1em; /* Espaciado interno a los lados */
 }
-@media (max-width: 480px) {
-  .anime {
-    flex: 1 1 100%;
-  }
+
+.social-icons {
+  margin-bottom: 1em; /* Margen inferior */
+}
+
+.social-icon {
+  display: inline-block; /* Alineación horizontal */
+  margin-right: 1em; /* Margen a la derecha */
+  font-size: 1.5em; /* Tamaño del ícono */
+  color: #FFFFFF; /* Blanco */
+  transition: color 0.3s; /* Transición suave del color */
+}
+
+.social-icon:hover {
+  color: #FFD700; /* Dorado al pasar el ratón */
+}
+
+/* Estilos específicos para cada red social (opcional) */
+.social-icon.youtube {
+  color: #FF0000;
+} /* Rojo para YouTube */
+.social-icon.instagram {
+  color: #E1306C;
+} /* Rosa para Instagram */
+.social-icon.tiktok {
+  color: #000000;
+} /* Negro para TikTok */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #800080;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=main.css.map */

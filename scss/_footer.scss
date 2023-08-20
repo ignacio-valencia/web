@@ -1,6 +1,36 @@
 @import 'variables';
+@import 'mixins';
 
+// Estilos para el pie de página
 .site-footer {
-    background-color: $primary-color;
-    color: $secondary-color;
+    background-color: $footer-bg;
+    color: $footer-text;
+    padding: 1em 0;
+    text-align: center;
 }
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 1em; /* Espaciado interno a los lados */
+}
+
+.social-icons {
+    margin-bottom: 1em; /* Margen inferior */
+}
+
+.social-icon {
+    display: inline-block; /* Alineación horizontal */
+    margin-right: 1em; /* Margen a la derecha */
+    font-size: 1.5em; /* Tamaño del ícono */
+    color: #FFFFFF; /* Blanco */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.social-icon:hover {
+    color: #FFD700; /* Dorado al pasar el ratón */
+}
+
+/* Estilos específicos para cada red social (opcional) */
+.social-icon.youtube { color: #FF0000; } /* Rojo para YouTube */
+.social-icon.instagram { color: #E1306C; } /* Rosa para Instagram */
+.social-icon.tiktok { color: #000000; } /* Negro para TikTok */

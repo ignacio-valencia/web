@@ -1,14 +1,42 @@
 @import 'variables';
+@import 'mixins';
 
+// Estilos para la galería
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1em;
+}
 
-    .anime {
-        flex: 1 1 calc(33.333% - 1em);
-        background-color: $secondary-color;
-        border: 1px solid $primary-color;
-    }
+.anime {
+    flex: 1 1 calc(33.333% - 1em);
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: $gallery-item-bg;
+    border: 1px solid $gallery-item-border;
+    text-align: center;
+}
+
+.anime img {
+    max-width: 100%;
+    /* Ajusta la imagen al contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    margin-bottom: 0.5em;
+    /* Margen inferior */
+}
+
+.anime h3 {
+    margin: 0.5em 0;
+    /* Margen arriba y abajo */
+    color: #4B0082;
+    /* Morado oscuro */
+}
+
+.anime p {
+    font-size: 0.9em;
+    /* Tamaño de fuente más pequeño */
+    color: #333333;
+    /* Gris oscuro */
 }

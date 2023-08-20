@@ -9,15 +9,14 @@
 @import 'gallery';
 @import 'footer';
 
-// Estilos adicionales y ajustes de diseño responsivo
-@media (max-width: 768px) {
-    .anime {
-        flex: 1 1 calc(50% - 1em); // Toma la mitad del ancho en pantallas más pequeñas
-    }
+// CSS general
+body {
+    font-family: $font-family;
+    background-color: $body-bg-color;
+    color: $text-color;
 }
 
-@media (max-width: 480px) {
-    .anime {
-        flex: 1 1 100%; // Toma todo el ancho en pantallas muy pequeñas
-    }
-}
+
+
+
+

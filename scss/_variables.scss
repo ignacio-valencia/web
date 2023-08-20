@@ -1,13 +1,15 @@
-$primary-color: #4B0082;
-$secondary-color: #800080;
-$white-color: #FFFFFF;
-$grey-color: #333333;
-$light-grey-color: #ddd;
-$youtube-color: #FF0000;
-$instagram-color: #E1306C;
-$tiktok-color: #000000;
-$gold-color: #FFD700;
+// Colores
+$body-bg-color: #800080; // Morado
+$text-color: #FFFFFF; // Blanco
+$navbar-bg-color: #FFFFFF; // Blanco
+$navbar-text-color: #4B0082; // Morado oscuro
+$gallery-item-bg: #FFFFFF; // Blanco
+$gallery-item-border: #4B0082; // Morado oscuro
+$footer-bg: #4B0082; // Morado oscuro
+$footer-text: #FFFFFF; // Blanco
+// font
 $font-family: Arial, sans-serif;
+
 // Variable overrides first
 $primary: #900;
 $enable-shadows: true;

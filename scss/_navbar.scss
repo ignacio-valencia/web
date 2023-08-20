@@ -1,38 +1,57 @@
 @import 'variables';
 @import 'mixins';
 
-// Estilos para el menú de navegación de Bootstrap
+// Estilos para la barra de navegación
 .navbar {
     background-color: $navbar-bg-color;
+
+    // Alineación del ícono con el título "My GoodView"
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+
+        .material-icons {
+            margin-right: 8px;
+        }
+    }
+
+    // Alineación de los íconos con el texto en el menú principal
+    .nav-link {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: $text-color;
+        }
+
+        .material-icons {
+            margin-right: 8px;
+        }
+    }
 }
 
-.navbar-brand,
-.navbar-nav .nav-link {
-    color: $navbar-text-color;
-}
-/* siderbar */
-.sidebar {
-    padding: 1em; /* Espaciado interno */
-    border-right: 1px solid #ddd; /* Borde derecho */
+// Estilos para el menú desplegable
+.dropdown-menu {
+    background-color: $dropdown-bg-color;
 }
 
-.sidebar .nav-link {
-    display: flex; /* Utiliza Flexbox para alinear íconos y texto */
-    align-items: center; /* Alinea verticalmente los íconos y el texto */
-    color: #4B0082; /* Morado oscuro */
-}
-.sidebar h3 {
-    color: #4B0082; /* Morado oscuro */
+// Estilos para los elementos del menú desplegable
+.dropdown-item {
+    color: $dropdown-item-color;
+
+    &:hover {
+        background-color: $dropdown-item-hover-bg;
+        color: $dropdown-item-hover-color;
+    }
 }
 
-.sidebar .nav-link .material-icons {
-    margin-right: 0.5em; /* Agrega un margen a la derecha del ícono */
+// Estilos para el menú off-canvas
+.offcanvas {
+    background-color: $offcanvas-bg-color;
+    color: $text-color;
 }
 
-.sidebar .nav-link:hover {
-    color: #800080; /* Morado al pasar el ratón */
-}
-
-.dropdown:hover .dropdown-menu {
+// Estilos para el menú desplegable en hover
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }

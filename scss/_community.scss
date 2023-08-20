@@ -91,3 +91,24 @@ h1, h2 {
         }
     }
 }
+.discussion-content {
+    flex: 1;
+
+    h4 {
+        margin-bottom: $spacing-unit / 2;
+    }
+
+    p {
+        @include small-text;
+        color: $secondary-text-color;
+        margin-bottom: $spacing-unit / 2;
+    }
+
+    .view-more {
+        color: $primary-color;
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

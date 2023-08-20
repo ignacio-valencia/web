@@ -1,115 +1,23 @@
-@import 'mixins';
-@import 'variables';
-// Then import Bootstrap
+// Importar todo Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Luego importar tus propios archivos
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'navbar';
+@import 'gallery';
+@import 'footer';
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: $secondary-color;
-    color: $white-color;
-}
-
-.navbar {
-    background-color: $white-color;
-    .navbar-brand,
-    .navbar-nav .nav-link {
-        color: $primary-color;
-        @include flex-center;
-        .material-icons {
-            margin-right: 0.5em;
-        }
-    }
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1em;
-}
-
-.anime {
-    flex: 1 1 calc(33.333% - 1em);
-    box-sizing: border-box;
-    padding: 1em;
-    background-color: $white-color;
-    border: 1px solid $primary-color;
-    text-align: center;
-    img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 0.5em;
-    }
-    h3 {
-        margin: 0.5em 0;
-        color: $primary-color;
-    }
-    p {
-        font-size: 0.9em;
-        color: $grey-color;
-    }
-}
-
-.sidebar {
-    padding: 1em;
-    border-right: 1px solid $light-grey-color;
-    .nav-link {
-        @include flex-center;
-        color: $primary-color;
-    }
-    h3 {
-        color: $primary-color;
-    }
-    .nav-link .material-icons {
-        margin-right: 0.5em;
-    }
-    .nav-link:hover {
-        color: $secondary-color;
-    }
-}
-
-.site-footer {
-    background-color: $primary-color;
-    color: $white-color;
-    padding: 1em 0;
-    text-align: center;
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1em;
-    }
-    .social-icons {
-        margin-bottom: 1em;
-        .social-icon {
-            display: inline-block;
-            margin-right: 1em;
-            font-size: 1.5em;
-            color: $white-color;
-            transition: color 0.3s;
-            &:hover {
-                color: $gold-color;
-            }
-            @include social-icon-colors;
-        }
-    }
-}
-
+// Estilos adicionales y ajustes de diseño responsivo
 @media (max-width: 768px) {
     .anime {
-        flex: 1 1 calc(50% - 1em);
+        flex: 1 1 calc(50% - 1em); // Toma la mitad del ancho en pantallas más pequeñas
     }
 }
 
 @media (max-width: 480px) {
     .anime {
-        flex: 1 1 100%;
+        flex: 1 1 100%; // Toma todo el ancho en pantallas muy pequeñas
     }
 }

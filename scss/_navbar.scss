@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
+.navbar {
+    background-color: $secondary-color;
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        color: $primary-color;
+        @include flex-center;
+    }
+}

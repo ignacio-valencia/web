@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'mixins';
+
+// Estilos específicos para la página de recomendaciones
+.blog-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    &+.blog-post {
+        border-top: 1px solid #ccc; // Cambia el color según tu diseño
+        padding-top: 20px; // Ajusta el padding según tus necesidades
+        margin-top: 20px; // Ajusta el margen según tus necesidades
+    }
+
+    &.left {
+        flex-direction: row-reverse;
+        background: linear-gradient(to left, rgba(128, 0, 128, 1), rgba(128, 0, 128, 0));
+    }
+
+    &.right {
+        background: linear-gradient(to right, rgba(128, 0, 128, 1), rgba(128, 0, 128, 0));
+    }
+
+    .post-image {
+        flex: 1;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .post-content {
+        flex: 2;
+        padding: 1em;
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .genre,
+        .synopsis {
+            font-size: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        .read-more {
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+}

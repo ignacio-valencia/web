@@ -1,114 +1,98 @@
 @import 'variables';
 @import 'mixins';
 
-.container {
-    @include container-margin;
-}
+.container-discussion {
+    .container {
+        @include container-margin;
+    }
 
-h1, h2 {
-    @include center-text;
-    margin-bottom: $spacing-unit;
-}
+    h1,
+    h2 {
+        @include center-text;
+        margin-bottom: $spacing-unit;
+    }
 
-.list-group {
-    margin-bottom: $spacing-unit;
+    .list-group {
+        margin-bottom: $spacing-unit;
 
-    a {
-        @include transition-bg;
+        a {
+            @include transition-bg;
 
-        h5 {
-            margin-bottom: $spacing-unit / 2;
-        }
+            p {
+                @include small-text;
+                color: $secondary-text-color;
+            }
 
-        p {
-            @include small-text;
-            color: $secondary-text-color;
-        }
-
-        &:hover {
-            background-color: $hover-bg-color;
+            &:hover {
+                background-color: $hover-bg-color;
+            }
         }
     }
-}
 
-// Estilos para la página community.html
-.discussion {
-    border: 1px solid $discussion-border-color;
-    padding: 1em;
-    margin-bottom: 1em;
-    // ... otros estilos
-}
+    // Estilos para la página community.html
+    .discussion {
+        border: 1px solid;
+        padding: 1em;
+        margin-bottom: 1em;
 
-.discussion-header {
-    display: flex;
-    align-items: center;
-    // ... otros estilos
-}
-
-.anime img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-}
-
-// Estilos para la columna de discusiones aleatorias
-.col-md-3 {
-    .anime {
-        img {
+        .anime img {
             width: 50px;
-            height: auto;
+            height: 50px;
+            border-radius: 50%;
         }
     }
-}
-.relevant-discussion {
-    display: flex;
-    align-items: center;
-    margin-bottom: $spacing-unit;
 
-    .anime-img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-right: $spacing-unit;
+    .discussion-header {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    // Estilos para la columna de discusiones aleatorias
+    .col-md-3 {
+        .anime {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .relevant-discussion {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+
+        .discussion-content {
+            flex: 1;
+
+
+            p {
+                @include small-text;
+                color: $secondary-text-color;
+            }
+
+            .view-more {
+                text-decoration: none;
+            }
+        }
     }
 
     .discussion-content {
         flex: 1;
 
-        h4 {
-            margin-bottom: $spacing-unit / 2;
-        }
-
         p {
             @include small-text;
             color: $secondary-text-color;
-            margin-bottom: $spacing-unit / 2;
         }
 
         .view-more {
-            color: $primary-color;
             text-decoration: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
     }
-}
-.discussion-content {
-    flex: 1;
 
-    h4 {
-        margin-bottom: $spacing-unit / 2;
-    }
-
-    p {
-        @include small-text;
-        color: $secondary-text-color;
-        margin-bottom: $spacing-unit / 2;
-    }
-
-    .view-more {
-        color: $primary-color;
-        text-decoration: none;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
 }

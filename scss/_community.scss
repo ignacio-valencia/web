@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+    @include container-margin;
+}
+
+h1, h2 {
+    @include center-text;
+    margin-bottom: $spacing-unit;
+}
+
+.list-group {
+    margin-bottom: $spacing-unit;
+
+    a {
+        @include transition-bg;
+
+        h5 {
+            margin-bottom: $spacing-unit / 2;
+        }
+
+        p {
+            @include small-text;
+            color: $secondary-text-color;
+        }
+
+        &:hover {
+            background-color: $hover-bg-color;
+        }
+    }
+}
+
+// Estilos para la página community.html
+.discussion {
+    border: 1px solid $discussion-border-color;
+    padding: 1em;
+    margin-bottom: 1em;
+    // ... otros estilos
+}
+
+.discussion-header {
+    display: flex;
+    align-items: center;
+    // ... otros estilos
+}
+
+.anime img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+// Estilos para la columna de discusiones aleatorias
+.col-md-3 {
+    .anime {
+        img {
+            width: 50px;
+            height: auto;
+        }
+    }
+}

@@ -5,7 +5,33 @@
 }
 
 @mixin social-icon-colors {
-    .youtube { color: $youtube-color; }
-    .instagram { color: $instagram-color; }
-    .tiktok { color: $tiktok-color; }
+    .youtube {
+        color: $youtube-color;
+    }
+
+    .instagram {
+        color: $instagram-color;
+    }
+
+    .tiktok {
+        color: $tiktok-color;
+    }
+}
+
+// _community.scss
+@mixin container-margin {
+    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing-unit * 2;
+}
+
+@mixin center-text {
+    text-align: center;
+}
+
+@mixin transition-bg {
+    transition: background-color 0.3s ease;
+}
+
+@mixin small-text {
+    font-size: 0.9rem;
 }

@@ -1,8 +1,6 @@
 @import 'variables';
 @import 'mixins';
 
-
-
 // Estilos para la tarjeta de anime
 .anime-card {
     flex-direction: column;
@@ -47,8 +45,6 @@
     }
 }
 
-
-
 // Estilos para las etiquetas de estado
 .tag {
     font-size: 0.8em;
@@ -69,4 +65,3 @@
         background-color: $tag-bg-plan-to-watch;
     }
 }
-

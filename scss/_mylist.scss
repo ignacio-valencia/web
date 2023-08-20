@@ -1,0 +1,72 @@
+@import 'variables';
+@import 'mixins';
+
+
+
+// Estilos para la tarjeta de anime
+.anime-card {
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid $anime-card-border;
+    background-color: $anime-card-bg;
+    text-align: center;
+    margin-bottom: 1em;
+    color: black;
+    @extend .card;
+    @extend .text-center;
+
+    h3 {
+        margin: 0.5em 0;
+    }
+
+    p {
+        margin: 0.5em 0;
+        @extend .d-block;
+        @extend .opacity-50;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+        @extend .rounded-3;
+    }    
+
+    button {
+        margin-bottom: 0.5em;
+        @extend .btn;
+        @extend .rounded-pill;
+        @extend .px-3;
+    }
+
+    .add{
+        @extend .btn-success;
+    }
+
+    .drop{
+        @extend .btn-danger;
+    }
+}
+
+
+
+// Estilos para las etiquetas de estado
+.tag {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3em;
+    color: #fff;
+
+    &.watching {
+        background-color: $tag-bg-watching;
+    }
+
+    &.completed {
+        background-color: $tag-bg-completed;
+    }
+
+    &.plan-to-watch {
+        background-color: $tag-bg-plan-to-watch;
+    }
+}
+

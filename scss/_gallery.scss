@@ -16,6 +16,7 @@
     background-color: $gallery-item-bg;
     border: 1px solid $gallery-item-border;
     text-align: center;
+    @extend .rounded-3;
 }
 
 .anime img {
@@ -25,6 +26,8 @@
     /* Mantiene la proporción de la imagen */
     margin-bottom: 0.5em;
     /* Margen inferior */
+    @extend .rounded-3;
+
 }
 
 .anime h3 {

@@ -1,6 +1,6 @@
 // Importar todo Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+@import "../node_modules/bootstrap/scss/utilities/api";
 // Luego importar tus propios archivos
 @import 'variables';
 @import 'mixins';
@@ -8,6 +8,7 @@
 @import 'navbar';
 @import 'gallery';
 @import 'footer';
+@import 'mylist'; 
 
 // CSS general
 body {

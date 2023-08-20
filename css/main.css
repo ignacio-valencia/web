@@ -8848,7 +8848,7 @@ textarea.form-control-lg {
   border-radius: var(--bs-border-radius) !important;
 }
 
-.rounded-3, .anime-card img, .anime img, .anime {
+.rounded-3, .blog-post .post-image img, .anime-card img, .anime img, .anime {
   border-radius: var(--bs-border-radius-lg) !important;
 }
 
@@ -13619,7 +13619,7 @@ textarea.form-control-lg {
   border-radius: var(--bs-border-radius) !important;
 }
 
-.rounded-3, .anime-card img, .anime img, .anime {
+.rounded-3, .blog-post .post-image img, .anime-card img, .anime img, .anime {
   border-radius: var(--bs-border-radius-lg) !important;
 }
 
@@ -16902,10 +16902,10 @@ textarea.form-control-lg {
 }
 .blog-post.left {
   flex-direction: row-reverse;
-  background: linear-gradient(to left, rgb(128, 0, 128), rgba(128, 0, 128, 0));
+  background: linear-gradient(to left, rgb(0, 0, 0), rgba(128, 0, 128, 0));
 }
 .blog-post.right {
-  background: linear-gradient(to right, rgb(128, 0, 128), rgba(128, 0, 128, 0));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(128, 0, 128, 0));
 }
 .blog-post .post-image {
   flex: 1;
@@ -16913,6 +16913,7 @@ textarea.form-control-lg {
 .blog-post .post-image img {
   max-width: 100%;
   height: auto;
+  margin: 2rem;
 }
 .blog-post .post-content {
   flex: 2;

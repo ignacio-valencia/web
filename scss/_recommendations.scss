@@ -16,11 +16,11 @@
 
     &.left {
         flex-direction: row-reverse;
-        background: linear-gradient(to left, rgba(128, 0, 128, 1), rgba(128, 0, 128, 0));
+        background: linear-gradient(to left, rgb(0, 0, 0), rgba(128, 0, 128, 0));
     }
 
     &.right {
-        background: linear-gradient(to right, rgba(128, 0, 128, 1), rgba(128, 0, 128, 0));
+        background: linear-gradient(to right, rgb(0, 0, 0), rgba(128, 0, 128, 0));
     }
 
     .post-image {
@@ -29,6 +29,8 @@
         img {
             max-width: 100%;
             height: auto;
+            margin: 2rem;
+            @extend .rounded-3;
         }
     }
 

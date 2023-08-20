@@ -60,3 +60,34 @@ h1, h2 {
         }
     }
 }
+.relevant-discussion {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-unit;
+
+    .anime-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: $spacing-unit;
+    }
+
+    .discussion-content {
+        flex: 1;
+
+        h4 {
+            margin-bottom: $spacing-unit / 2;
+        }
+
+        p {
+            @include small-text;
+            color: $secondary-text-color;
+            margin-bottom: $spacing-unit / 2;
+        }
+
+        .view-more {
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+}

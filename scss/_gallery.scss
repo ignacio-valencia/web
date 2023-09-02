@@ -17,6 +17,31 @@
     border: 1px solid $gallery-item-border;
     text-align: center;
     @extend .rounded-3;
+
+    @media (max-width: 768px) {
+        flex: 1 1 calc(50% - 20px); // Ajusta el ancho para que haya 2 columnas
+
+        h3 {
+            font-size: 1em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+    }
+
+    // Media query para pantallas aún más pequeñas
+    @media (max-width: 480px) {
+        flex: 1 1 calc(100% - 20px); // Ajusta el ancho para que haya 1 columna
+
+        h3 {
+            font-size: 0.9em;
+        }
+
+        p {
+            font-size: 0.7em;
+        }
+    }
 }
 
 .anime img {

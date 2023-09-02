@@ -16714,12 +16714,34 @@ textarea.form-control-lg {
 }
 
 .anime {
-  flex: 1 1 calc(33.333% - 1em);
+  flex: 1 1 calc(33.333% - 20px);
   padding: 1em;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid #4B0082;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .anime {
+    flex: 1 1 calc(50% - 20px);
+  }
+  .anime h3, .anime .h3 {
+    font-size: 1em;
+  }
+  .anime p {
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .anime {
+    flex: 1 1 calc(100% - 20px);
+  }
+  .anime h3, .anime .h3 {
+    font-size: 0.9em;
+  }
+  .anime p {
+    font-size: 0.8em;
+  }
 }
 
 .anime img {

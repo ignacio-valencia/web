@@ -10,7 +10,7 @@
 }
 
 .anime {
-    flex: 1 1 calc(33.333% - 1em);
+    flex: 1 1 calc(33.333% - 20px); // 3 columnas en pantallas grandes
     padding: 1em;
     box-sizing: border-box;
     background-color: $gallery-item-bg;
@@ -19,27 +19,27 @@
     @extend .rounded-3;
 
     @media (max-width: 768px) {
-        flex: 1 1 calc(50% - 20px); // Ajusta el ancho para que haya 2 columnas
+        flex: 1 1 calc(50% - 20px); // 2 columnas
 
         h3 {
             font-size: 1em;
         }
 
         p {
-            font-size: 0.8em;
+            font-size: 1em;
         }
     }
 
     // Media query para pantallas aún más pequeñas
     @media (max-width: 480px) {
-        flex: 1 1 calc(100% - 20px); // Ajusta el ancho para que haya 1 columna
+        flex: 1 1 calc(100% - 20px); // 1 columna
 
         h3 {
             font-size: 0.9em;
         }
 
         p {
-            font-size: 0.7em;
+            font-size: 0.8em;
         }
     }
 }
